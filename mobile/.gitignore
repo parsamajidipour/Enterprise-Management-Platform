@@ -1,0 +1,17 @@
+.dart_tool/
+.local-build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.metadata
+build/
+android/
+ios/
+linux/
+macos/
+web/
+windows/
+*.iml
+*.apk
+*.aab
+*.exe

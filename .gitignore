@@ -1,0 +1,42 @@
+# ── Backend ──────────────────────────────────────────────────────
+backend/vendor/
+backend/storage/logs/*.log
+backend/public/storage
+backend/.env
+backend/.env.*
+!backend/.env.example
+!backend/.env.docker.example
+
+# ── Frontend ─────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/.nuxt/
+frontend/.nuxt-build/
+frontend/.output/
+
+# ── Flutter / Mobile ─────────────────────────────────────────────
+mobile/build/
+mobile/.dart_tool/
+mobile/.pub-cache/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/android/.gradle/
+mobile/.gradle/
+mobile/android/local.properties
+
+# Flutter binary outputs
+*.apk
+*.aab
+*.exe
+*.iml
+
+# ── Docker / Data ─────────────────────────────────────────────────
+mysql_data/
+backups/
+
+# ── OS / Editor ───────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+
+# ── Logs ──────────────────────────────────────────────────────────
+*.log

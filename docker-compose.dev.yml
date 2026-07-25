@@ -1,0 +1,100 @@
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: emp_frontend
+    restart: unless-stopped
+    user: "1000:1000"
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+      - frontend_node_modules_uid1000:/app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      NUXT_PUBLIC_API_BASE: http://localhost:8010/api
+    command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+    depends_on:
+      - backend
+    networks:
+      - emp_network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: emp_backend
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - ./backend:/var/www/html
+      - backend_vendor:/var/www/html/vendor
+      - ./backend/docker/php/php.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+    ports:
+      - "8010:8000"
+    environment:
+      APP_NAME: Enterprise Management Platform
+      APP_ENV: local
+      APP_KEY: base64:JcEmJTvLg0DnvAsaprhJtbzqDdH7sK0Og+m9LHWlUsw=
+      APP_DEBUG: "true"
+      APP_URL: http://localhost:8010
+      DB_CONNECTION: mysql
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_DATABASE: emp_platform
+      DB_USERNAME: emp
+      DB_PASSWORD: password
+      LOG_CHANNEL: stack
+      CACHE_DRIVER: file
+      FILESYSTEM_DISK: local
+      QUEUE_CONNECTION: sync
+      SESSION_DRIVER: file
+    command: php artisan serve --host=0.0.0.0 --port=8000
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - emp_network
+
+  mysql:
+    image: mysql:8
+    container_name: emp_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: emp_platform
+      MYSQL_USER: emp
+      MYSQL_PASSWORD: password
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - emp_network
+
+  adminer:
+    image: adminer:latest
+    container_name: emp_adminer
+    restart: unless-stopped
+    ports:
+      - "8090:8080"
+    depends_on:
+      - mysql
+    networks:
+      - emp_network
+
+volumes:
+  mysql_data:
+    driver: local
+  backend_vendor:
+    driver: local
+  frontend_node_modules_uid1000:
+    driver: local
+
+networks:
+  emp_network:
+    driver: bridge
