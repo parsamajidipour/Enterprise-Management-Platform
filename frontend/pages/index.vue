@@ -79,7 +79,7 @@
 <script setup lang="ts">
 import { createCmmsService } from '~/services/cmms.service'
 import { createHttp } from '~/services/http'
-import { type PaginatedData } from '~/types/api'
+import type { PaginatedData } from '~/types/api'
 import type { WorkOrderSummary } from '~/types/dispatch'
 
 const config = useRuntimeConfig()

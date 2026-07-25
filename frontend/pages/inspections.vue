@@ -1,5 +1,9 @@
 <template>
   <PageShell>
+    <div class="mb-5 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900">
+      Preview — demo data, this page is not yet wired to the backend API.
+    </div>
+
     <section class="grid min-w-0 gap-5 xl:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
       <SectionCard title="Smart Form Templates" subtitle="Admin library for inspection forms, validation rules, and required evidence">
         <DataTable :columns="templateColumns" :rows="formTemplates" />

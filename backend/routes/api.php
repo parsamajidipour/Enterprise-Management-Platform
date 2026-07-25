@@ -11,7 +11,6 @@ use App\Http\Controllers\Api\InspectionFormController;
 use App\Http\Controllers\Api\InspectionRecordController;
 use App\Http\Controllers\Api\Mobile\MobileJobController;
 use App\Http\Controllers\Api\Mobile\MobileProfileController;
-use App\Http\Controllers\Api\UserController;
 use App\Http\Controllers\Api\WorkOrderController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,9 +38,6 @@ Route::middleware('auth:sanctum')->group(function () {
 
     // Dashboard
     Route::get('dashboard/kpis', [DashboardController::class, 'kpis']);
-
-    // Users
-    Route::get('users', [UserController::class, 'index']);
 
     // Assets
     Route::get('assets/by-barcode/{barcode}', [AssetController::class, 'findByBarcode']);

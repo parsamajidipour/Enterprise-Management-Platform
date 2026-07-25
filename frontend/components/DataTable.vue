@@ -38,7 +38,7 @@ import { useLanguage } from '~/composables/useLanguage'
 
 defineProps<{
   columns: Array<{ key: string; label: string; badge?: boolean }>
-  rows: any[]
+  rows: Record<string, unknown>[]
 }>()
 
 const { displayText, t } = useLanguage()

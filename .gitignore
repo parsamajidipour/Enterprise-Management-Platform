@@ -1,11 +1,18 @@
+# ── Environment files (repo-wide) ─────────────────────────────────
+# Covers the repo root, frontend/, and any other directory — not just
+# backend/ — since Nuxt and Docker Compose both read .env from other
+# locations too.
+.env
+.env.*
+!.env.example
+!.env.docker.example
+!**/.env.example
+!**/.env.docker.example
+
 # ── Backend ──────────────────────────────────────────────────────
 backend/vendor/
 backend/storage/logs/*.log
 backend/public/storage
-backend/.env
-backend/.env.*
-!backend/.env.example
-!backend/.env.docker.example
 
 # ── Frontend ─────────────────────────────────────────────────────
 frontend/node_modules/

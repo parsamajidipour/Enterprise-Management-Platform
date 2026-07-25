@@ -107,8 +107,6 @@ const authStore = useAuthStore()
 const { dir, isArabic, lang, t, toggleLocale } = useLanguage()
 const loggingOut = ref(false)
 
-const sidebarBrandHeightPx = 104
-
 useHead({
   htmlAttrs: {
     dir,

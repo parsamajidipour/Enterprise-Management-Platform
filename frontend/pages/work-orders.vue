@@ -189,7 +189,7 @@
 <script setup lang="ts">
 import { createHttp } from '~/services/http'
 import { ApiError, type PaginatedData } from '~/types/api'
-import type { DispatchAssignment, DispatchRecommendation, WorkOrderSummary } from '~/types/dispatch'
+import type { DispatchRecommendation, WorkOrderSummary } from '~/types/dispatch'
 
 const route = useRoute()
 const router = useRouter()

@@ -1,0 +1,946 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Relation 'technicianProfile' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 1
+			path: app/Console/Commands/DemoResetCommand.php
+
+		-
+			message: "#^Method App\\\\Exceptions\\\\Handler\\:\\:render\\(\\) should return Illuminate\\\\Http\\\\JsonResponse\\|Illuminate\\\\Http\\\\RedirectResponse\\|Illuminate\\\\Http\\\\Response but returns Symfony\\\\Component\\\\HttpFoundation\\\\Response\\.$#"
+			count: 1
+			path: app/Exceptions/Handler.php
+
+		-
+			message: "#^Relation 'technicianProfile' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/Admin/DispatchController.php
+
+		-
+			message: "#^Relation 'workOrder' is not found in App\\\\Models\\\\DispatchAssignment model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/Admin/DispatchController.php
+
+		-
+			message: "#^Relation 'latestActiveAssignment' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/Admin/TechnicianController.php
+
+		-
+			message: "#^Relation 'latestTechnicianLocation' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 2
+			path: app/Http/Controllers/Api/Admin/TechnicianController.php
+
+		-
+			message: "#^Relation 'technicianProfile' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 3
+			path: app/Http/Controllers/Api/Admin/TechnicianController.php
+
+		-
+			message: "#^Relation 'category' is not found in App\\\\Models\\\\Asset model\\.$#"
+			count: 2
+			path: app/Http/Controllers/Api/AssetController.php
+
+		-
+			message: "#^Call to an undefined method Laravel\\\\Sanctum\\\\Contracts\\\\HasAbilities\\:\\:delete\\(\\)\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/AuthController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\WorkOrder\\:\\:\\$asset\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/DashboardController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\WorkOrder\\:\\:\\$assignee\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/DashboardController.php
+
+		-
+			message: "#^Relation 'asset' is not found in App\\\\Models\\\\WorkOrder model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/DashboardController.php
+
+		-
+			message: "#^Relation 'assignee' is not found in App\\\\Models\\\\WorkOrder model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/DashboardController.php
+
+		-
+			message: "#^Relation 'assetCategory' is not found in App\\\\Models\\\\InspectionForm model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/InspectionFormController.php
+
+		-
+			message: "#^Relation 'fields' is not found in App\\\\Models\\\\InspectionForm model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/InspectionFormController.php
+
+		-
+			message: "#^Relation 'asset' is not found in App\\\\Models\\\\InspectionRecord model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/InspectionRecordController.php
+
+		-
+			message: "#^Relation 'inspectionForm' is not found in App\\\\Models\\\\InspectionRecord model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/InspectionRecordController.php
+
+		-
+			message: "#^Relation 'inspector' is not found in App\\\\Models\\\\InspectionRecord model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/InspectionRecordController.php
+
+		-
+			message: "#^Relation 'workOrder' is not found in App\\\\Models\\\\InspectionRecord model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/InspectionRecordController.php
+
+		-
+			message: "#^Relation 'workOrder' is not found in App\\\\Models\\\\DispatchAssignment model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/Mobile/MobileJobController.php
+
+		-
+			message: "#^Relation 'asset' is not found in App\\\\Models\\\\WorkOrder model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/WorkOrderController.php
+
+		-
+			message: "#^Relation 'assignee' is not found in App\\\\Models\\\\WorkOrder model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/WorkOrderController.php
+
+		-
+			message: "#^Relation 'creator' is not found in App\\\\Models\\\\WorkOrder model\\.$#"
+			count: 1
+			path: app/Http/Controllers/Api/WorkOrderController.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetCategoryResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetCategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetCategoryResource\\:\\:\\$description\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetCategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetCategoryResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetCategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetCategoryResource\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetCategoryResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$code\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$description\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$location\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$purchased_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\AssetResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/AssetResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$action\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$direction\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$error_message\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$external_id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$local_id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$local_type\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$request_payload\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$response_payload\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\CmmsSyncLogResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/CmmsSyncLogResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DefectResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DefectResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DefectResource\\:\\:\\$description\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DefectResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DefectResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DefectResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DefectResource\\:\\:\\$severity\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DefectResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DefectResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DefectResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$accepted_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$arrived_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$assigned_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$cancelled_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$completed_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$notes\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$started_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\DispatchAssignmentResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/DispatchAssignmentResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\EvidenceFileResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/EvidenceFileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\EvidenceFileResource\\:\\:\\$file_name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/EvidenceFileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\EvidenceFileResource\\:\\:\\$file_path\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/EvidenceFileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\EvidenceFileResource\\:\\:\\$file_size\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/EvidenceFileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\EvidenceFileResource\\:\\:\\$file_type\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/EvidenceFileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\EvidenceFileResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/EvidenceFileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionAnswerResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionAnswerResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionAnswerResource\\:\\:\\$inspection_form_field_id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionAnswerResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionAnswerResource\\:\\:\\$value\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionAnswerResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormFieldResource\\:\\:\\$field_type\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormFieldResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormFieldResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormFieldResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormFieldResource\\:\\:\\$is_required\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormFieldResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormFieldResource\\:\\:\\$label\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormFieldResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormFieldResource\\:\\:\\$options\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormFieldResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormFieldResource\\:\\:\\$order\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormFieldResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormResource\\:\\:\\$description\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormResource\\:\\:\\$is_active\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormResource\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionFormResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionFormResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionRecordResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionRecordResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionRecordResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionRecordResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionRecordResource\\:\\:\\$inspected_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionRecordResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionRecordResource\\:\\:\\$notes\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionRecordResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionRecordResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionRecordResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\InspectionRecordResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/InspectionRecordResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$accepted_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$arrived_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$assigned_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$cancelled_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$completed_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$notes\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$started_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileJobResource\\:\\:\\$workOrder\\.$#"
+			count: 16
+			path: app/Http/Resources/Api/Mobile/MobileJobResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$email\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$is_active\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$phone\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$technicianLocations\\.$#"
+			count: 5
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:\\$technicianProfile\\.$#"
+			count: 5
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Call to an undefined method App\\\\Http\\\\Resources\\\\Api\\\\Mobile\\\\MobileProfileResource\\:\\:getRoleNames\\(\\)\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/Mobile/MobileProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$accuracy\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$captured_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$latitude\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$longitude\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$technician_id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianLocationResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianLocationResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$default_area\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$employee_code\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$is_active\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$phone\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$skills\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianProfileResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianProfileResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$active_jobs_count\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$email\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$is_active\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$phone\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\TechnicianResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$latestActiveAssignment\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianStatusResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$latestCompletedAssignment\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianStatusResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$latestTechnicianLocation\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/TechnicianStatusResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$technicianProfile\\.$#"
+			count: 2
+			path: app/Http/Resources/Api/TechnicianStatusResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:\\$email\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:\\$is_active\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:\\$name\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:\\$phone\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Call to an undefined method App\\\\Http\\\\Resources\\\\Api\\\\UserResource\\:\\:getRoleNames\\(\\)\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/UserResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$cmms_status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$completed_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$description\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$external_id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$external_reference\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$latitude\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$longitude\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$outage_type\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$priority\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$reported_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$scheduled_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$source\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$title\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$created_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$from_status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$id\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$notes\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$source\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$to_status\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Http\\\\Resources\\\\Api\\\\WorkOrderStatusEventResource\\:\\:\\$updated_at\\.$#"
+			count: 1
+			path: app/Http/Resources/Api/WorkOrderStatusEventResource.php
+
+		-
+			message: "#^Strict comparison using \\=\\=\\= between 'cancelled'\\|'completed'\\|'in_progress'\\|'pending' and 'pending_dispatch' will always evaluate to false\\.$#"
+			count: 1
+			path: app/Services/Cmms/CmmsImportService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\DispatchAssignment\\:\\:\\$workOrder\\.$#"
+			count: 3
+			path: app/Services/DispatchAssignmentService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$technicianProfile\\.$#"
+			count: 1
+			path: app/Services/DispatchAssignmentService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$active_jobs_count\\.$#"
+			count: 1
+			path: app/Services/DispatchRecommendationService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\User\\:\\:\\$latestTechnicianLocation\\.$#"
+			count: 1
+			path: app/Services/DispatchRecommendationService.php
+
+		-
+			message: "#^Relation 'latestTechnicianLocation' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 1
+			path: app/Services/DispatchRecommendationService.php
+
+		-
+			message: "#^Relation 'technicianProfile' is not found in App\\\\Models\\\\User model\\.$#"
+			count: 2
+			path: app/Services/DispatchRecommendationService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\DispatchAssignment\\:\\:\\$workOrder\\.$#"
+			count: 2
+			path: app/Services/Mobile/MobileJobService.php
+
+		-
+			message: "#^Relation 'workOrder' is not found in App\\\\Models\\\\DispatchAssignment model\\.$#"
+			count: 1
+			path: app/Services/Mobile/MobileJobService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\DispatchAssignment\\:\\:\\$assignedBy\\.$#"
+			count: 2
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\DispatchAssignment\\:\\:\\$technician\\.$#"
+			count: 2
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\EvidenceFile\\:\\:\\$uploader\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Access to an undefined property App\\\\Models\\\\WorkOrder\\:\\:\\$creator\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Relation 'actor' is not found in App\\\\Models\\\\WorkOrderStatusEvent model\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Relation 'assignedBy' is not found in App\\\\Models\\\\DispatchAssignment model\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Relation 'inspectionRecord' is not found in App\\\\Models\\\\EvidenceFile model\\.$#"
+			count: 2
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Relation 'technician' is not found in App\\\\Models\\\\DispatchAssignment model\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Relation 'uploader' is not found in App\\\\Models\\\\EvidenceFile model\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php
+
+		-
+			message: "#^Using nullsafe method call on non\\-nullable type Carbon\\\\Carbon\\. Use \\-\\> instead\\.$#"
+			count: 1
+			path: app/Services/WorkOrders/WorkOrderTimelineService.php

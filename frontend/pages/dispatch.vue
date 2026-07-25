@@ -174,7 +174,7 @@ async function cancelAssignment(assignmentId: number) {
   const assignment = await dispatchStore.cancel(assignmentId, cancelNotes[assignmentId] || undefined)
   if (!assignment) return
 
-  delete cancelNotes[assignmentId]
+  cancelNotes[assignmentId] = ''
   await loadDispatch()
 }
 

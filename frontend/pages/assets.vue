@@ -1,5 +1,9 @@
 <template>
   <PageShell>
+    <div class="mb-5 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm font-bold text-amber-900">
+      Preview — demo data, this page is not yet wired to the backend API.
+    </div>
+
     <section class="grid gap-5 xl:grid-cols-[1.2fr_0.8fr]">
       <SectionCard title="Asset Master Registry" subtitle="Barcode, GIS location, inspection counts, defects, and condition index">
         <DataTable :columns="columns" :rows="assets" />

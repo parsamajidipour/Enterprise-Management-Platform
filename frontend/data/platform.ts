@@ -14,27 +14,10 @@ export const navItems: NavItem[] = [
   { title: tx('nav.integrations', 'Integrations'), to: '/integrations', icon: 'integrations' },
 ]
 
-// Future API records should provide stable keys for controlled values, e.g.
-// status_key: "status.in_progress" or role_key: "role.field_inspector".
-// Map those keys to tx(status_key, fallback_label) at the frontend boundary.
-// Free-text content such as user names, emails, IDs, descriptions, endpoints,
-// coordinates, and asset codes should stay plain strings unless the backend
-// explicitly stores localized variants.
-
-export const kpis = [
-  { title: 'Inspection Completion', value: '96.4%', target: '>= 95%', trend: '+3.2%', icon: '96', tone: 'green' },
-  { title: 'WO Cycle Time', value: '2.6d', target: '<= 3d', trend: '-0.4d', icon: '2.6', tone: 'blue' },
-  { title: 'Defect Response', value: '18.5h', target: '<= 24h', trend: '-5.5h', icon: '18', tone: 'orange' },
-  { title: 'Data Quality', value: '98.8%', target: '>= 98%', trend: '+1.1%', icon: '99', tone: 'green' }
-]
-
-export const workOrders = [
-  { id: 'WO-2026-1001', asset: 'TR-132-A', type: tx('work_type.monthly_transformer_inspection', 'Monthly Transformer Inspection'), priority: tx('priority.critical', 'Critical'), team: tx('team.alpha', 'Team Alpha'), assignee: 'Alex Morgan', status: tx('status.in_progress', 'In Progress'), due: '2026-05-28', location: 'North Grid Station' },
-  { id: 'WO-2026-1002', asset: 'CB-220-07', type: tx('work_type.sf6_pressure_check', 'SF6 Pressure Check'), priority: tx('priority.high', 'High'), team: tx('team.beta', 'Team Beta'), assignee: 'Sara Chen', status: tx('status.assigned', 'Assigned'), due: '2026-05-29', location: 'Westfield Substation' },
-  { id: 'WO-2026-1003', asset: 'OHL-400-12', type: tx('work_type.route_patrol', 'Route Patrol'), priority: tx('priority.high', 'High'), team: tx('team.line_crew_2', 'Line Crew 2'), assignee: 'Line Crew 2', status: tx('status.offline_saved', 'Offline Saved'), due: '2026-05-30', location: 'Eastgate Corridor' },
-  { id: 'WO-2026-1004', asset: 'PR-88', type: tx('work_type.annual_relay_test', 'Annual Relay Test'), priority: tx('priority.critical', 'Critical'), team: tx('team.protection', 'Protection Team'), assignee: 'Protection Team', status: tx('status.completed', 'Completed'), due: '2026-05-24', location: 'Harborview Station' },
-  { id: 'WO-2026-1005', asset: 'RTU-19', type: tx('work_type.communication_check', 'Communication Check'), priority: tx('priority.medium', 'Medium'), team: tx('team.scada', 'SCADA Team'), assignee: 'Priya Patel', status: tx('status.pending_sync', 'Pending Sync'), due: '2026-05-31', location: 'Riverside Station' }
-]
+// TODO(phase 4): assets/assetCategories and formTemplates/inspections are still
+// mock data consumed by assets.vue and inspections.vue. These are slated to be
+// replaced by real backend-backed data; this file should be deleted once that
+// lands, not kept around as a fallback.
 
 export const assets = [
   { id: 'TR-132-A', name: 'Power Transformer', category: tx('asset_category.power_transformers', 'Power Transformers'), health: 91, barcode: 'QR-TR-132-A', gis: '40.7128, -74.0060', inspections: 24, defects: 1, status: tx('status.healthy', 'Healthy') },
@@ -72,34 +55,4 @@ export const integrationMatrix = [
   { system: 'OLCM', direction: tx('integration.direction.write_push', 'Write Push'), protocol: tx('integration.protocol.rest_api', 'REST API'), frequency: tx('frequency.post_inspection', 'Post-inspection'), status: tx('status.monitoring', 'Monitoring') },
   { system: 'Barcode Master', direction: tx('integration.direction.read', 'Read'), protocol: tx('integration.protocol.local_scan_rest', 'Local Scan / REST'), frequency: tx('frequency.on_scan', 'On scan'), status: tx('status.connected', 'Connected') },
   { system: 'BI Dashboard', direction: tx('integration.direction.read_pull', 'Read Pull'), protocol: tx('integration.protocol.db_view_api', 'DB View / API'), frequency: tx('frequency.scheduled', 'Scheduled'), status: tx('status.connected', 'Connected') }
-]
-
-export const apiEndpoints = [
-  { endpoint: '/api/workorders', method: 'GET', description: 'Retrieve open tasks for crew or asset', target: 'CMMS' },
-  { endpoint: '/api/workorders/{id}/status', method: 'PUT', description: 'Update execution progression', target: 'CMMS' },
-  { endpoint: '/api/assets/{barcode}', method: 'GET', description: 'Resolve asset data upon scan', target: 'Master DB' },
-  { endpoint: '/api/inspections', method: 'POST', description: 'Submit verified inspection payload', target: 'Platform DB' },
-  { endpoint: '/api/olcm/condition', method: 'POST', description: 'Push health indices and ratings', target: 'OLCM' }
-]
-
-export const users = [
-  { name: 'Alex Morgan', email: 'alex@example.com', role: tx('role.field_inspector', 'Field Inspector'), team: tx('team.alpha', 'Team Alpha'), status: tx('status.active', 'Active') },
-  { name: 'Sara Chen', email: 'sara@example.com', role: tx('role.field_supervisor', 'Field Supervisor'), team: tx('team.beta', 'Team Beta'), status: tx('status.active', 'Active') },
-  { name: 'Priya Patel', email: 'priya@example.com', role: tx('role.system_admin', 'System Admin'), team: tx('team.it_operations', 'IT Operations'), status: tx('status.active', 'Active') },
-  { name: 'Protection Team', email: 'protection@example.com', role: tx('role.specialist_group', 'Specialist Group'), team: tx('team.protection_department', 'Protection'), status: tx('status.active', 'Active') }
-]
-
-export const roles = [
-  { role: tx('role.system_admin', 'System Admin'), users: 3, access: 'All modules, configuration, user provisioning' },
-  { role: tx('role.field_supervisor', 'Field Supervisor'), users: 12, access: 'Dispatch, review, approve, exception handling' },
-  { role: tx('role.field_inspector', 'Field Inspector'), users: 48, access: 'Mobile tasks, forms, evidence capture, offline sync' },
-  { role: tx('role.asset_manager', 'Asset Manager'), users: 8, access: 'Dashboards, asset health, OLCM condition review' }
-]
-
-export const settings = [
-  { key: tx('setting.key.offline_sync_interval', 'Offline sync interval'), value: tx('setting.value.15_minutes', '15 minutes'), owner: tx('setting.owner.mobile_platform', 'Mobile Platform') },
-  { key: tx('setting.key.mandatory_gps_evidence', 'Mandatory GPS evidence'), value: tx('setting.value.enabled', 'Enabled'), owner: tx('setting.owner.forms_engine', 'Forms Engine') },
-  { key: tx('setting.key.mfa_enforcement', 'MFA enforcement'), value: tx('setting.value.enabled', 'Enabled'), owner: tx('setting.owner.identity_access', 'Identity & Access') },
-  { key: tx('setting.key.critical_defect_sla', 'Critical defect SLA'), value: tx('setting.value.24_hours', '24 hours'), owner: tx('setting.owner.workflow_engine', 'Workflow Engine') },
-  { key: tx('setting.key.cmms_closure_mode', 'CMMS closure mode'), value: tx('setting.value.supervisor_approval', 'Supervisor approval'), owner: tx('setting.owner.integration_gateway', 'Integration Gateway') }
 ]
